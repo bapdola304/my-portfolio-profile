@@ -1,50 +1,395 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!-- ===== CSS ===== -->
-        <link rel="stylesheet" href="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!-- ===== BOX ICONS ===== -->
-        
+    <!-- ===== CSS ===== -->
+    <link rel="stylesheet" href="assets/css/styles.css">
 
-        <title>Responsive personal portfolio | Harris</title>
-    </head>
-    <body>
-        <!--===== HEADER =====-->
-        
+    <!-- ===== BOX ICONS ===== -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
 
-        <main class="l-main">
-            <!--===== HOME =====-->
-            
+    <title>Responsive personal portfolio | Hung Ngo</title>
+</head>
 
-            <!--===== ABOUT =====-->
-            
+<body>
+    <!--===== HEADER =====-->
+    <header class="l-header">
+        <nav class="nav bd-grid">
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+            <div> <a href="#" class="nav__logo">Hung Ngo</a></div>
+            <div class="nav__menu" id="nav-menu">
+                <div class="nav__close" id="nav-close">
+                    <i class='bx bx-x'></i>
+                </div>
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">About</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">Skills</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#experience" class="nav__link">Education - Experience</a>
+                    </li>
+                    <li class="nav__item">
+                        <!-- <a href="#services" class="nav__link">Services</a> -->
+                    </li>
+                    <li class="nav__item">
+                        <a href="#works" class="nav__link">My Projects</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
 
-            <!--===== SKILLS =====-->
-            
 
-            <!--===== EDUCATION =====-->
-            
+    <main class="l-main">
+        <!--===== HOME =====-->
+        <section class="home" id="home">
+            <div class="home__container bd-grid">
+                <div class="home__data">
+                    <div class="home__img">
+                        <img src="assets/img/avt.jpg" alt="">
+                    </div>
+                    <h1 class="home__title">Hung Ngo</h1>
+                    <span class="home__profession">Frontend Developer</span>
+                    <div class="home__social">
+                        <a href="https://github.com/bapdola304" class="home__social-link" target="_blank">
+                            <i class='bx bxl-github'></i>
+                        </a>
+                        <a href="https://www.facebook.com/ngohung0/" class="home__social-link" target="_blank">
+                            <i class='bx bxl-facebook'></i>
+                        </a>
+                        <!-- <a href="#" class="home__social-link">
+                            <i class='bx bxl-github'></i>
+                        </a>
+                        <a href="#" class="home__social-link">
+                            <i class='bx bxl-github'></i>
+                        </a> -->
+                    </div>
+                    <a href="#" class="button home__button">
+                        Download CV
+                    </a>
+                </div>
+            </div>
+        </section>
 
-            <!--===== SERVICES =====-->
-            
 
-            <!--===== PROJECT IN MIND =====-->
-            
+        <!--===== ABOUT =====-->
+        <section class="about section" id="about">
+            <span class="section-subtitle">My intro</span>
+            <h2 class="section-title">About Me</h2>
+            <div class="about__container bd-grid">
+                <div class="about__data">
+                    <p class="about__description">Hi, I'm a frontend developer. With my passion, I want to work as a
+                        front-end developer where I could create digital magic and elevate user experience to the next
+                        level.Hi, I'm a frontend developer. With my passion, I want to work as a front-end developer
+                        where I could create digital magic and elevate user experience to the next level. Hi, I'm a
+                        frontend developer. With my passion, I want to work as a front-end developer where I could
+                        create digital magic and elevate user experience to the next level.</p>
+                    <!-- <img src="assets/img/about.png" alt="" class="about__img"> -->
+                </div>
+                <div>
+                    <div class="about__information">
+                        <h3 class="about__information-title">Information</h3>
+                        <div class="about__information-data">
+                            <i class='bx bx-user about__information-icon'></i>
+                            <span>Hung Ngo</span>
+                        </div>
+                        <div class="about__information-data">
+                            <i class='bx bx-phone about__information-icon'></i>
+                            <span>0329555634</span>
+                        </div>
+                        <div class="about__information-data">
+                            <i class='bx bx-envelope about__information-icon'></i>
+                            <span>nqhungit97@gmail.com</span>
+                        </div>
+                        <div class="about__information-data">
+                            <i class='bx bxl-facebook about__information-icon'></i>
+                            <span>https://www.facebook.com/ngohung0</span>
+                        </div>
+                    </div>
+                    <!-- <div class="about__information">
+                        <h3 class="about__information-title">Experial</h3>
+                        <div class="about__information-data">
+                            <i class='bx bx-briefcase about__information-icon'></i>
+                            <div> <span class="about__information-subtitle">50+ Projects</span>
+                                <span class="about__information-subtitle-small">Completed</span>
+                            </div>
+                        </div>
+                        <div class="about__information-data">
+                            <i class='bx bx-support about__information-icon'></i>
+                            <div>
+                                <span class="about__information-subtitle">Support</span>
+                                <span class="about__information-subtitle-small">Online</span>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+        </section>
 
-            <!--===== WORKS =====-->
-            
+        <!--===== SKILLS =====-->
+        <section class="skills section" id="skills">
+            <span class="section-subtitle">Why Choose Me</span>
+            <h2 class="section-title">My Skills</h2>
+            <div class="skills__container bd-grid">
+                <div class="skills__content">
+                    <div class="skill__item">
+                        <h3 class="skills__subtitle">PROGRAMING LANGUAGES</h3>
+                        <ul class="skill__list">
+                            <li class="skill">Javascript</li>
+                            <li class="skill">PHP</li>
+                            <li class="skill">Java</li>
+                            <li class="skill">Web Suite (HTML, CSS, SCSS)</li>
+                        </ul>
+                    </div>
+                    <div class="skill__item">
+                        <h3 class="skills__subtitle">LIBRARY, FRAMEWORKS</h3>
+                        <ul class="skill__list">
+                            <li class="skill">ReactJs</li>
+                            <li class="skill">React Native</li>
+                            <li class="skill">NextJs</li>
+                            <li class="skill">NodeJs, Express</li>
+                            <li class="skill">Vuejs and Angular (know a little)</li>
+                            <!-- <li class="skill">WordPress</li> -->
+                        </ul>
+                    </div>
+                </div>
+                <div class="skills__content">
+                    <div class="skill__item">
+                        <h3 class="skills__subtitle">DATABASE</h3>
+                        <ul class="skill__list">
+                            <li class="skill">My SQL</li>
+                            <li class="skill">MongoDB</li>
+                            <li class="skill">Firebase</li>
+                        </ul>
+                    </div>
+                    <div class="skill__item">
+                        <h3 class="skills__subtitle">OTHER KNOWLEDGE</h3>
+                        <ul class="skill__list">
+                            <li class="skill">Git</li>
+                            <li class="skill">Docker</li>
+                            <li class="skill">RESTful API</li>
+                            <li class="skill">GraphQL</li>
+                            <li class="skill">Responsive website</li>
+                            <li class="skill">Webpack</li>
+                            <!-- <li class="skill">Android Java</li> -->
+                        </ul>
+                    </div>
+                </div>
+                <div class="skills__content">
+                    <div class="skill__item">
+                        <h3 class="skills__subtitle">ENGLISH</h3>
+                        <ul class="skill__list">
+                            <li class="skill">Able to read foreign books and documents</li>
+                            <li class="skill">Research issue</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-            <!--===== CONTACT =====-->
-            
-        </main>
+        <!--===== Experience =====-->
+        <section class="education section" id="experience">
+            <span class="section-subtitle">Qualification</span>
+            <h2 class="section-title">Education - Experience</h2>
+            <div class="education__container bd-grid">
 
-        <!--===== FOOTER =====-->
-        
-        <!--===== MAIN JS =====-->
-        <script src=""></script>
-    </body>
+                <div class="education__content">
+                    <div>
+                        <h3 class="education__year">(2015-2019) Studying at Quy Nhon University</h3>
+                        <span class="education__project">Graduated from Quy Nhon University</span>
+                        <span class="education__des">Major: Information Technology</span>
+                    </div>
+                    <div class="education__time">
+                        <span class="education__rounder"></span>
+                        <span class="education__line"></span>
+                    </div>
+                    <div>
+                        <div class="education__map">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.3300727571905!2d109.21555531483051!3d13.758957890342836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x316f6cebf252c49f%3A0xa83caa291737172f!2zVHLGsOG7nW5nIMSQ4bqhaSBI4buNYyBRdXkgTmjGoW4!5e0!3m2!1svi!2s!4v1611156802688!5m2!1svi!2s"
+                                width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen=""
+                                aria-hidden="false" tabindex="0"></iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="education__content">
+                    <div>
+                        <h3 class="education__year">(09/2020 - Present) Work in TMA Solutions</h3>
+                        <span class="education__project">Project: Security Support and Management System</span>
+                        <span class="education__des">This is a Web Application support management financial asset such as stock, cash dividend, capital gain/loss report, financial reports and other related reports…</span>
+                    </div>
+                    <div class="education__time">
+                        <span class="education__rounder"></span>
+                        <span class="education__line"></span>
+                    </div>
+                    <div>
+                        <!-- <h3 class="education__rate">Project: Security Support and Management System</h3> -->
+                        <span class="education__posoition">Position: Frontend developer</span>
+                        <span class="education__university1">
+                            <p>Technologies/Databse:</p>
+                            <ul>
+                                <li class="skill">Java (Spring Boot)</li>
+                                <li class="skill">ReactJS and React Native</li>
+                                <li class="skill">Docker</li>
+                                <li class="skill"> Aws s3</li>
+                                <li class="skill">MySQL</li>
+                                <li class="skill">MongoDB</li>
+                            </ul>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="education__content">
+                    <div>
+                        <h3 class="education__year">(12/2020 - Present) Work in TMA Solutions</h3>
+                        <span class="education__project">Project: Financial and Tax Management System</span>
+                        <span class="education__des">This is a Web Application support management financial asset such as stock, cash dividend, capital gain/loss report, financial reports and other related reports…</span>
+                    </div>
+                    <div class="education__time">
+                        <span class="education__rounder"></span>
+                        <span class="education__line"></span>
+                    </div>
+                    <div>
+                        <!-- <h3 class="education__rate">Project: Security Support and Management System</h3> -->
+                        <span class="education__posoition">Position: Frontend developer</span>
+                        <span class="education__university1">
+                            <p>Technologies/Databse:</p>
+                            <ul>
+                                <li class="skill">NodeJS</li>
+                                <li class="skill">ReactJS and React Native</li>
+                                <li class="skill">Docker</li>
+                                <li class="skill">Aws s3</li>
+                                <li class="skill">MySQL</li>
+                                <li class="skill">Azure EC2</li>
+                            </ul>
+                        </span>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+
+        <!--===== SERVICES =====-->
+        <!-- <section class="services section" id="services">
+            <span class="section-subtitle">What I Offer</span>
+            <h2 class="section-title">My Services</h2>
+            <div class="services__container bd-grid">
+                <div class="services__content">
+                    <i class='bx bx-code services__icon'></i>
+                    <h3 class="services__title">Web Design</h3>
+                    <p class="services__description">This service that I offer is of hi </p>
+                </div>
+
+                <div class="services__content">
+                    <i class='bx bx-code services__icon'></i>
+                    <h3 class="services__title">Web Design</h3>
+                    <p class="services__description">This service that I offer is of hi </p>
+                </div>
+
+                <div class="services__content">
+                    <i class='bx bx-code services__icon'></i>
+                    <h3 class="services__title">Web Design</h3>
+                    <p class="services__description">This service that I offer is of hi </p>
+                </div>
+            </div>
+        </section> -->
+        <!--===== PROJECT IN MIND =====-->
+        <!--===== WORKS =====-->
+        <section class="works section" id="works">
+            <!-- <span class="section-subtitle">My portfoliog</span> -->
+            <h2 class="section-title">My Projects</h2>
+            <div class="works__container bd-grid">
+                <div class="works__img">
+                    <img src="assets/img/work1.jpg" alt="">
+                    <div class="works__data">
+                        <a href="#" class="works__link"><i class='bx bx-link-alt'></i></a>
+                        <span class="works__title">Work 1</span>
+                    </div>
+                </div>
+
+                <div class="works__img">
+                    <img src="assets/img/work2.jpg" alt="">
+                    <div class="works__data">
+                        <a href="#" class="works__link"><i class='bx bx-link-alt'></i></a>
+                        <span class="works__title">Work 12</span>
+                    </div>
+                </div>
+
+                <div class="works__img">
+                    <img src="assets/img/work3.jpg" alt="">
+                    <div class="works__data">
+                        <a href="#" class="works__link"><i class='bx bx-link-alt'></i></a>
+                        <span class="works__title">Work 13</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!--===== CONTACT =====-->
+        <section class="contact section" id="contact">
+            <span class="section-subtitle">Contact Me</span>
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact__container bd-grid">
+                <form action="" class="contact__form">
+                    <div class="contact__inputs">
+                        <input type="text" placeholder="Name" class="contact__input">
+                        <input type="mail" placeholder="Email" class="contact__input" />
+                    </div>
+                    <input type="text" placeholder="Project" class="contact__input" />
+                    <textarea name="" id="" cols="0" rows="5" placeholder="Message" class="contact__input"></textarea>
+                    <input type=" submit" value="Send Message" class="button contact__button" />
+                </form>
+                <div>
+                    <div class="contact__infor">
+                        <h3 class="contact__subtitle">Call me</h3>
+                        <span class="contact__text">0329555634</span>
+                        <!-- <span class="contact__text">999-000-123</span> -->
+                    </div>
+                    <div class="contact__infor">
+                        <h3 class="contact__subtitle">E-mail</h3>
+                        <span class="contact__text">nqhungit97@gmail.com</span>
+                        <!-- <span class="contact__text">999-000-123</span> -->
+                    </div>
+                    <div class="contact__infor">
+                        <h3 class="contact__subtitle">Address</h3>
+                        <span class="contact__text">Quy Nhon, Binh Dinh</span>
+                        <!-- <span class="contact__text">999-000-123</span> -->
+                    </div>
+                </div>
+            </div>
+    </main>
+
+    <!--===== FOOTER =====-->
+    <footer class="footer section">
+        <div class="footer__container bd-grid">
+            <h1 class="footer__title">Hung Ngo</h1>
+            <p class="footer__description">I am Hung Ngo and this is my personal website, </p>
+            <div class="footer__social">
+                <a href="#" class="footer__link"><i class='bx bxl-facebook'></i></a>
+                <a href="#" class="footer__link"><i class='bx bxl-instagram'></i></a>
+                <a href="#" class="footer__link"><i class='bx bxl-twitter'></i></a>
+            </div>
+            <p class="footer__copy">A11 right reserved by Bedimcode - 2021</p>
+        </div>
+    </footer>
+    <!--===== MAIN JS =====-->
+    <script src="assets/js/main.js"></script>
+</body>
+
 </html>
