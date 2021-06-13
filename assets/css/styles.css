@@ -584,9 +584,10 @@ img {
     outline: none;
     border: none;
     background-color: #3333;;
-    font-size: var(--normal-font-size);
+    font-size: var(--small-font-size);
     margin-bottom: var(--mb-2);
     border-radius: .5rem;
+    color: #ffffff;
 }
 
 .contact ::placeholder {

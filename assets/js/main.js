@@ -1,7 +1,11 @@
 /*===== MENU SHOW Y HIDDEN =====*/
 const navMenu = document.getElementById('nav-menu'),
     toggleMenu = document.getElementById('nav-toggle'),
-    closeMenu = document.getElementById('nav-close');
+    closeMenu = document.getElementById('nav-close'),
+    btnSendContact = document.getElementById('send-contact'),
+    messageContact = document.getElementById('message'),
+    nameContact = document.getElementById('name'),
+    emailContact = document.getElementById('email');
 
 // SHOW
 toggleMenu.addEventListener('click', () => {
@@ -36,3 +40,15 @@ function scrollActive() {
         }
     })
 }
+
+// Fake send contact
+btnSendContact.addEventListener('click', () => {
+    if (emailContact.value && nameContact.value && messageContact.value) {
+        alert('Send Contact Success!');
+        emailContact.value = "";
+        nameContact.value = "";
+        messageContact.value = "";
+    } else {
+        alert('Please fill contact input!');
+    }
+})

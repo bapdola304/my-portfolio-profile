@@ -4,14 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <meta property="og:image" content="asset/img/sharelink.png">
     <!-- ===== CSS ===== -->
     <link rel="stylesheet" href="assets/css/styles.css">
 
     <!-- ===== BOX ICONS ===== -->
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
 
-    <title>Responsive personal portfolio | Hung Ngo</title>
+    <title>Hung Ngo | Personal portfolio</title>
 </head>
 
 <body>
@@ -92,12 +92,9 @@
             <h2 class="section-title">About Me</h2>
             <div class="about__container bd-grid">
                 <div class="about__data">
-                    <p class="about__description">Hi, I'm a frontend developer. With my passion, I want to work as a
+                    <p class="about__description">Hi, I'm a frontend developer. With my passion, I will constantly learn and apply new technologies to improve the project's performance and I want to work as a
                         front-end developer where I could create digital magic and elevate user experience to the next
-                        level.Hi, I'm a frontend developer. With my passion, I want to work as a front-end developer
-                        where I could create digital magic and elevate user experience to the next level. Hi, I'm a
-                        frontend developer. With my passion, I want to work as a front-end developer where I could
-                        create digital magic and elevate user experience to the next level.</p>
+                        level</p>
                     <!-- <img src="assets/img/about.png" alt="" class="about__img"> -->
                 </div>
                 <div>
@@ -348,12 +345,12 @@
             <div class="contact__container bd-grid">
                 <form action="" class="contact__form">
                     <div class="contact__inputs">
-                        <input type="text" placeholder="Name" class="contact__input">
-                        <input type="mail" placeholder="Email" class="contact__input" />
+                        <input type="text" placeholder="Name" class="contact__input" id="name"/>
+                        <input type="mail" placeholder="Email" class="contact__input" id="email"/>
                     </div>
-                    <input type="text" placeholder="Project" class="contact__input" />
-                    <textarea name="" id="" cols="0" rows="5" placeholder="Message" class="contact__input"></textarea>
-                    <input type=" submit" value="Send Message" class="button contact__button" />
+                    <!-- <input type="text" placeholder="Project" class="contact__input" /> -->
+                    <textarea name="" id="message" cols="0" rows="5" placeholder="Message" class="contact__input"></textarea>
+                    <input type="submit" value="Send Message" class="button contact__button" id="send-contact"/>
                 </form>
                 <div>
                     <div class="contact__infor">
